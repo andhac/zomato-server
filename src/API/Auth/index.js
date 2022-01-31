@@ -80,7 +80,7 @@ Router.get(
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
     return res.redirect(
-      `http://localhost:3000/google/${req.session.passport.user.token}`
+      `https://61f7f07a8ed433d02eda7dda--suspicious-jones-03313a.netlify.app/google/${req.session.passport.user.token}`
     );
   }
 );
